@@ -14,6 +14,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="TestData\US_WA\SR002i.ms.wkb" />
+    <None Remove="TestData\US_WA\SR002i.zm.wkb" />
+    <None Remove="TestData\US_WA\SR002i.zm.wkt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="TestData\US_WA\SR002i.ms.wkb" />
+    <EmbeddedResource Include="TestData\US_WA\SR002i.zm.wkb" />
+    <EmbeddedResource Include="TestData\US_WA\SR002i.zm.wkt" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="$(SolutionDir)src\NetTopologySuite\NetTopologySuite.csproj" />
     <ProjectReference Include="$(SolutionDir)src\NetTopologySuite.Lab\NetTopologySuite.Lab.csproj" />
   </ItemGroup>
